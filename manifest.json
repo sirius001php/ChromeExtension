@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "Login and Registration Extension",
+    "version": "1.0",
+    "permissions": [
+        "storage",
+        "activeTab",
+        "scripting"
+    ],
+    "background": {
+        "service_worker": "js/background.js"
+    },
+    "action": {
+        "default_popup": "templates/main.html"
+    },
+    "icons": {
+        "32": "src/icon32.png"
+    },
+    "host_permissions": [
+        "http://127.0.0.1:5000/*"
+    ]
+}
